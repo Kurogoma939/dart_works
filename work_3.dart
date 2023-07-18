@@ -1,5 +1,3 @@
-import 'dart:math';
-
 /// Dartの計算
 void main() {
   final testNum = 3.234562;
@@ -29,18 +27,19 @@ void main() {
   print(result4);
 
   /// Q7: resultの値を小数点第2位で四捨五入し、出力してください。 //double：少数の値を扱える
-  double rounded = double.parse(result.toStringAsFixed(2));
-  print(rounded);
+
+  double result5 = (result * 100).round() / 100;
+  print(result5.toStringAsFixed(2));
 
   /// Q8: testNumを小数点第2位で四捨五入し、出力してください。
-  double rounded2 = double.parse(testNum.toStringAsFixed(2));
-  print(rounded2);
+  double result6 = (testNum * 100).round() / 100;
+  print(result6.toStringAsFixed(2));
 
   /// Q9: testNumを小数点第2位で切り捨てし、出力してください。
-  final rounded3 = testNum.toStringAsFixed(2);
-  print(rounded3);
+  double result7 = (testNum * 100).floor() / 100;
+  print(result7.toStringAsFixed(2));
 
   /// Q10: testNumを小数点第2位で切り上げし、出力してください。
-  final rounded4 = (testNum * 100).ceilToDouble() / 100;
-  print(rounded4);
+  double result8 = (testNum * 100).ceil() / 100;
+  print(result8);
 }
