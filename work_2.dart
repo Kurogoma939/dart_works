@@ -1,11 +1,11 @@
 /// Dartの基本の型
 void main() {
   /// Q1: 20という数字を格納した変数定義をしてください。
-  String number = "20";
+  int number = 20;
   print(number);
 
   /// Q2: 12.56という数字を格納した定数定義をしてください。
-  const String number2 = "12,56";
+  double number2 = 12.56;
   print(number2);
 
   /// Q3: "satoshi"という文字列を格納した変数定義をしてください。
@@ -25,26 +25,26 @@ void main() {
   numbers[2];
 
   /// Q7: Map型の変数mapを定義し、キーと値のペア {"name": "John", "age": 25} を格納してください。
-  Map<String, dynamic> list = {
+  Map<String, dynamic> data = {
     "name": "John",
     "age": 25,
   };
 
   /// Q8: mapのキー"age"に対応する値を出力してください。
-  print(list["age"]);
+  print(data["age"]);
 
   /// Q9: listに新たな要素6を追加してください。
-  list["age"] = 6;
+  data["age"] = 6;
 
   /// Q10: mapに新たなキーと値のペア "country": "USA" を追加してください。
-  list["country"] = "USA";
-  print(list["country"]);
+  data["country"] = "USA";
+  print(data["country"]);
 
   /// Q11: listの要素数を出力してください。
-  int count = list.length;
+  int count = data.length;
   print("要素数: $count");
 
   /// Q12: mapのキーの一覧を出力してください。
-  List<String> keys = list.keys.toList();
+  List<String> keys = data.keys.toList();
   print("キーの一覧: $keys");
 }
