@@ -8,7 +8,35 @@
 /// - Q5: numberが3かつ5の倍数の場合、"numberは15の倍数です"と出力してください
 void main() {
   // 任意な数字を指定します
-  final int number = 10;
+  final int number = 15;
 
   /// 以下に回答を記載してください
+  /// Q1
+  print('numberは$numberです');
+
+  /// Q4
+  if (number is num == false) {
+    print('numberは数字ではありません');
+    return;
+  }
+
+  /// Q2
+  if (number > 10) {
+    print('numberは10より大きいです');
+  }
+
+  /// Q3
+  if (number < 10) {
+    print('numberは10より小さいです');
+  }
+
+  /// Q5
+  if (number % 3 == 0) {
+    print('numberは15の倍数です');
+  }
+  //'!'を使うとtrueの場合はfalse、falseの場合はtrueとなる
+  // final bool flag = true;
+  // if (!flag) {
+  //   print('flagはtrueです');
+  // }
 }
