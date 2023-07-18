@@ -10,13 +10,29 @@ void main() {
   ];
 
   /// Q1: forのループを使って、testListの要素を順番に出力してください
+  for (var i = 0; i < testList.length; i++) {
+    print(testList[i]);
+  }
 
   /// Q2: for-inのループを使って、testListの要素を順番に出力してください
+  for (var num in testList) {
+    print(num);
+  }
 
   /// Q3: forEachのループを使って、testListの要素を順番に出力してください
+  testList.forEach((num) {
+    print(num);
+  });
 
   /// Q4: map関数を用いて、memberListの要素を順番に出力してください。
   /// (例) 田中さんは20歳です
+  memberList.map((member) {
+    print('${member['name']}さんは${member['age']}歳です');
+  }).toList();
 
   /// Q5: where関数を用いて、memberListの要素のうち、30歳以上の人のみを出力してください。
+  print(memberList.where((member) => member['age'] >= 30).toLi4 修正st());
+  // list.forEach((member) {
+  // print('${member['name']}さんは${member['age']}歳です');
+  // });
 }
