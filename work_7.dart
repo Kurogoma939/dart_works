@@ -10,12 +10,14 @@ void main() {
   ];
 
   /// Q4: forのループを使って、userListの要素を順番に出力してください
-  for (var i = 0; i < userList.length; i++) {
-    print(userList[i]);
+  for (int i = 0; i < userList.length; i++) {
+    final UserModel user = userList[i];
+    print(
+        'User: ${user.userName}, Age: ${user.age}, Gender: ${user.gender.name}');
   }
 
   /// Q5: for-inのループを使って、userListの要素を順番に出力してください
-  for (var user in userList) {
+  for (final user in userList) {
     print(
         'User: ${user.userName}, Age: ${user.age}, Gender: ${user.gender.name}');
   }
@@ -34,7 +36,7 @@ void main() {
 
   /// Q8: where関数を用いて、userListの要素のうち、ageが30歳以上の人のみを出力してください。
   List<UserModel> userList2 = userList.where((user) => user.age >= 30).toList();
-  for (var user in userList2) {
+  for (final user in userList2) {
     print('User: ${user.userName}, Age: ${user.age}, Gender: ${user.gender}');
   }
 
@@ -47,7 +49,7 @@ void main() {
       UserModel(userName: 'Sara', age: 28, gender: Gender.woman);
   newUserList.add(newUser);
 
-  for (var user in newUserList) {
+  for (final user in newUserList) {
     print('User: ${user.userName}, Age: ${user.age}, Gender: ${user.gender}');
   }
 }
