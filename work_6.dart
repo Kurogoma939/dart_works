@@ -31,7 +31,7 @@ void main() {
   }).toList();
 
   /// Q5: where関数を用いて、memberListの要素のうち、30歳以上の人のみを出力してください。
-  print(memberList.where((member) => member['age'] >= 30).toLi4 修正st());
+  print(memberList.where((member) => member['age'] >= 30).toList());
   // list.forEach((member) {
   // print('${member['name']}さんは${member['age']}歳です');
   // });
